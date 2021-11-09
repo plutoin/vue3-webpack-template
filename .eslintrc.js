@@ -25,6 +25,10 @@ module.exports = {
   rules: {
     // extends에서 기본 제공 규칙을 그대로 사용하는 경우 옵션 제공하지 않아도 됨
     // 사용자화해야 하는 상황일 경우 추가
+    'vue/html-closing-bracket-newline': ['error', {
+      singleline: 'never',
+      multiline: 'never'
+    }],
     'vue/html-self-closing': ['error', {
       html: {
         void: 'always',
@@ -33,10 +37,6 @@ module.exports = {
       },
       svg: 'always',
       math: 'always'
-    }],
-    'vue/html-closing-bracket-newline': ['error', {
-      singleline: 'never',
-      multiline: 'never'
     }]
   }
 }
